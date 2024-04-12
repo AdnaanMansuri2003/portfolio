@@ -15,13 +15,13 @@ Follow these steps to download and set up the project:
 1. Clone the repository to your local machine using Git:
 
     ```bash
-    git clone https://github.com/your-username/portfolio-website.git
+    git clone https://github.com/AdnaanMansuri2003/portfolio.git
     ```
 
 2. Navigate into the project directory:
 
     ```bash
-    cd portfolio-website
+    cd portfolio
     ```
 
 3. Install the necessary dependencies using npm:
