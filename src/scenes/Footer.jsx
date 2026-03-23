@@ -10,7 +10,7 @@ const Footer = () => {
             ADNAAN MANSURI
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2024 ADNAAN. All Rights Reserved.
+            ©2026 ADNAAN. All Rights Reserved.
           </p>
         </div>
       </div>

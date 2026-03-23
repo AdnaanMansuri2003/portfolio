@@ -1,6 +1,5 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-
 const container = {
   hidden: {},
   visible: {
@@ -15,22 +14,26 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+// ✅ UPDATED PROJECT COMPONENT WITH LINK
+const Project = ({ title, link, image }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      variants={projectVariant}
+      className="relative block cursor-pointer hover:scale-105 transition duration-300"
+    >
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
+        <p className="mt-7">View Project</p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-    </motion.div>
+
+      <img src={image} alt={title} />
+    </motion.a>
   );
 };
 
@@ -57,10 +60,9 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
+
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          Showcasing a collection of real-world projects focused on AI, data visualization, and full-stack development. These projects highlight my ability to build scalable applications, solve practical problems, and create user-friendly digital experiences.
         </p>
       </motion.div>
 
@@ -74,27 +76,38 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
+          <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+
+          <Project
+  title="Ontario Appliance Service"
+  link="https://melodic-squirrel-b72843.netlify.app/"
+  image="/assets/project1.jpeg"
+/>
+
+<Project
+  title="ISAJI MART"
+  link="https://isajimart.vercel.app/"
+  image="/assets/project2.jpeg"
+/>
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project
+            title="NEXSIGHT"
+            link="https://github.com/AdnaanMansuri2003/nexsight"
+            image="/assets/project3.jpeg"
+          />
 
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
+          <Project
+            title="Indian Food Image Classification"
+            link="https://github.com/AdnaanMansuri2003/Coding-Raja-Technologies-Internship"
+            image="/assets/project4.jpeg"
+          />
+
+          
+
+          <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
           </div>
         </motion.div>

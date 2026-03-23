@@ -24,14 +24,14 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
       <div className="flex flex-wrap mt-1 mb-7">
-        <p className="mt-10 mr-4">- Web Development</p>
-        <p className="mt-10 mr-4">- Adobe Illustrator 2020</p>
+        <p className="mt-10 mr-4">- Software Developer</p>
+        <p className="mt-10 mr-4">- Full Stake Developer</p>
         <p className="mt-10 mr-4">- Data Analysis</p>
       </div>
       <div className="flex flex-wrap mt-1 mb-7">
+        <p className="mr-10">- React.js, Next.js</p>
+        <p className="mr-10">- MySQL</p>
         <p className="mr-10">- Python-Django</p>
-        <p className="mr-10">- MongoDB</p>
-        <p className="mr-18">- React, Next.js</p>
       </div>
         </motion.div>
 
@@ -77,8 +77,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          Enthusiastic and quick learner with a creative problem-solving mindset, passionate about software development, eager to contribute and grow within your team despite lacking direct experience.
-          </p>
+Passionate software developer with hands-on experience in building real-world applications, including AI-powered systems and full-stack web platforms. Developed projects involving data visualization, machine learning, and service-based applications, with a strong focus on problem-solving and scalable solutions.
+</p>
         </motion.div>
 
         {/* INNOVATIVE */}
@@ -103,8 +103,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          My approach to problem-solving is characterized by creativity and out-of-the-box thinking. I thrive on tackling challenges from unconventional angles, technologies and methodologies to devise innovative solutions. By embracing innovation, I consistently find new ways to overcome obstacles and drive progress in my projects.
-          </p>
+Innovative developer focused on building intelligent and user-centric solutions, combining AI and modern web technologies to solve real-world problems. Constantly exploring new tools and approaches to create efficient, scalable, and impactful applications.
+</p>
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
@@ -128,8 +128,8 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-          My problem-solving approach is fueled by imagination and creativity. I excel at envisioning innovative solutions to complex problems by thinking outside the box and exploring unconventional ideas. By tapping into my imagination, I consistently devise unique strategies and approaches that lead to breakthroughs and advancements in my projects.
-          </p>
+Imaginative developer who transforms ideas into practical applications, blending creativity with technical skills to design engaging and effective digital solutions. Focused on building unique user experiences and innovative systems.
+</p>
         </motion.div>
       </div>
     </section>
